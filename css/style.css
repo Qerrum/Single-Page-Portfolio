@@ -1,0 +1,596 @@
+/*
+####################################
+#	     TABLE OF CONTENTS		   
+####################################
+#								   
+#	1. Top Section+General		  
+#	2. Welcome Section			   
+#	3. About Me Section			   
+#	4. My Skills Section		   
+#	5. Education Section		   
+#	6. My Work Section			   
+#	7. Contact Me Section		   
+#	8. Footer 					   
+#								   
+####################################
+*/
+
+/*
+####################################
+#
+#	1. TOP SECTION + GENERAL SECTION
+#
+####################################
+*/
+
+html, body { height: 100%; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	margin:unset;
+	color: #fff;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 780px) {
+	.header_container {
+		width: 786px;
+		margin: 0px auto;
+		padding-top: 3px;
+	}
+}
+
+@media only screen and (max-width: 807px) {
+	.desk_logo { display:none !important; }
+	.mob_logo {
+		display:block !Important;
+		width:100%;
+		text-align:center
+	}
+	#main_nav ul li { padding: 20px 13px 10px 24px !Important; }
+}
+
+.mob_logo {
+	display:none;
+	padding: unset !Important;
+}
+
+@media only screen and (min-width: 808px) {
+
+	#main_nav ul { display:flex }
+	.desk_logo {
+		padding: unset !important;
+		width: 219px;
+	}
+}
+
+.logo {
+	height: 52px;
+    border: unset;
+}
+
+nav ul {
+	margin:unset;
+	padding: unset;
+	text-align:center;
+}
+
+h1 {
+	font-size: 70px;
+	line-height: 60px;
+    margin-bottom: 1px;
+	text-transform: uppercase;
+}
+
+h2 {
+	color:#1d1d1d;
+	text-transform: uppercase;
+}
+
+sub {
+	font-size: 15px;
+	font-style: italic;
+}
+
+header {
+	position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+#main_nav ul li {
+	list-style:none;
+	display: inline-block;
+    padding: 15px 32px 15px 32px;
+}
+
+#main_nav ul li a {
+	text-decoration:none !Important;
+	color:white;
+	text-transform: uppercase;
+}
+
+#main_nav ul li a:hover {
+	color:#ffff71 !Important
+}
+
+.creative:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    background-size: 100% 100%;
+    background-image: url(../img/header/bottom-color.png);
+}
+
+#main_bg {
+	background-image:url(../img/header/main.gif);
+	background-size:cover;
+	background-attachment: scroll;
+	height: 100%;
+}
+
+.overlay {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.56);
+	display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 1200px) {
+   .container {
+		width: 1024px;
+		margin: 0px auto;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+   .container {
+		width: 92%;
+		margin: 0px auto;
+	}
+}
+
+.no_over { overflow:hidden }
+
+.full { width:100% }
+
+.italic { font-style:italic }
+
+.center { text-align:center }
+
+.bold {font-weight: bold; }
+
+.justify { text-align: justify; }
+
+.right_txt { text-align:right }
+
+.left_txt { text-align: left; }
+
+.title_border {
+	background-color: #1d1d1d;
+	width:40px;
+	height:1px;
+	margin:0px auto;
+	margin-bottom: 2em;
+}
+
+#light_border {
+	background-color: #fff;
+}
+
+p { color: #fff; }
+
+.dark p { color: #1d1d1d; }
+
+h2.light { color: #fff; }
+
+p#no_justify { text-align: left; }
+
+@media only screen and (min-width: 680px) {
+   .col-md-6 {
+		width:49%;
+		float:left;
+		min-height: 1px;
+	}
+
+	.col-md-4 {
+		width:33.33%;
+		float:left;
+		min-height: 1px;
+	}
+
+	.text_pad { padding-left:35px; }
+}
+
+@media only screen and (max-width: 679px) {
+   .col-md-6 {
+		width:100%;
+		float:left;
+		margin-bottom:1em;
+		min-height: 1px;
+	}
+}
+
+.mt1 { margin-top:2em; }
+
+.mt2 { margin-top:1em; }
+
+img { border: 1px solid #1d1d1d; }
+
+
+/*
+####################################
+#
+#	2. WELCOME SECTION
+#
+####################################
+*/
+
+#welcome {
+	background-color: #f8f9fa;
+	padding: 80px 0px 80px 0px;
+}
+
+/*
+####################################
+#
+#	3. ABOUT ME SECTION
+#
+####################################
+*/
+
+#about {
+	background-color: #f8f9fa;
+	background-image: url(../img/about_me/about_bg.png);
+	padding: 80px 0px 0px 0px;
+}
+
+.about_img {
+	margin-bottom: -4px;
+	border: none;
+	transition: 0.3s;
+}
+
+.social {
+	height:32px;
+	border:unset;
+	padding-right: 15px;
+	vertical-align: middle;
+}
+
+/*
+####################################
+#
+#	4. MY SKILLS SECTION
+#
+####################################
+*/
+
+#skills {
+	background-image: linear-gradient(rgba(29, 29, 29, 0.90), rgba(29, 29, 29, 0.90)), url(../img/skills/skills.jpg);
+	background-size:cover;
+	background-position: bottom;
+	padding: 80px 0px 80px 0px;
+	border-bottom: 1px solid #7878b1;
+}
+
+.skill_o {
+	width:20%;float:left;
+}
+
+.bar_outer {
+	width:70%;
+	float:left;
+}
+
+.right_per {
+	width:10%;
+	float:left;
+	text-align:right
+}
+
+/* MAIN BARS */
+.progress_bar_out {
+	border-radius: 15px;
+	min-height: 21px;
+}
+
+.progress_bar_in {
+	color: #fff;
+	text-align: center;
+	border-radius: 15px;
+	min-height: 21px;
+}
+
+/* HTML BAR */
+.html_prg_out { background-color: #be4c00; }
+.html_prg_in { background-color: #d07b42; width:95%; }
+
+/* CSS Bar */
+.css_prg_out { background-color: #2573a7; }
+.css_prg_in { background-color: #4296d0; width:96%; }
+
+/* JQUERY BAR */
+.jq_prg_out { background-color: #2f4052; }
+.jq_prg_in { background-color: #3c556e; width:85%; }
+
+/* PHOTOSHOP BAR */
+.ps_prg_out { background-color: #10467e; }
+.ps_prg_in { background-color: #4288d0; width:98%; }
+
+/* ILLUSTRATOR BAR */
+.il_prg_out { background-color: #81481c; }
+.il_prg_in { background-color: #e4720d; width:60%; }
+
+/* AFTEREFFECTS BAR */
+.ae_prg_out { background-color: #512e70; }
+.ae_prg_in { background-color: #a754e3; width:90%; }
+
+/*=== SKILLS BAR SECTION END ===*/
+
+
+/*
+####################################
+#
+#	5. EDUCATION SECTION
+#
+####################################
+*/
+
+#education {
+	background-color: #f8f9fa;
+	background-image: url(../img/edu/edu_bg.jpg);
+	background-position: center;
+	padding: 80px 0px 80px 0px;
+
+}
+
+.e_title {
+	font-size:18px;
+	color: #1d1d1d;
+}
+
+@media only screen and (min-width: 680px) {
+	.left_timeline {
+		width:49%;
+		float:left;
+		min-height: 1px;
+	}
+	
+	.middle_timeline {
+		height:166px;
+		background-color:#1d1d1d;
+		width:1px;
+		float:left;
+		margin-top: 106px;
+	}
+
+	.text_pad { padding-left:35px; }
+	
+}
+@media only screen and (max-width: 679px) {
+	.middle_timeline { display:none; }
+
+	.left_timeline { width:100% !Important; }
+}
+
+.timeline {
+  list-style: none;
+  margin: 0px 0 4px 182px;
+  padding-left: 30px;
+  border-left: 1px solid #1d1d1d;
+}
+
+.timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+
+.timeline p {
+  margin: 0 0 15px;
+}
+
+.date {
+  left: -158px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+  color: #1d1d1d;
+}
+
+.circle {
+  margin-top: -22px;
+  left: -40px;
+  width: 10px;
+  height: 10px;
+  background-color: #1d1d1d;
+  border: 5px solid #151515;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+  max-height: 20px;
+  position: relative;
+}
+
+.content p {
+  max-height: 200px;
+  color: #1d1d1d;
+  transition: color 0.3s linear 0.3s;
+}
+
+/*
+####################################
+#
+#	6. MY WORK SECTION
+#
+####################################
+*/
+
+#work {
+	background-color: #f8f9fa;
+	padding: 80px 0px 80px 0px;
+}
+
+.galley_pad { padding: 12px; }
+
+.wrk_img { cursor: pointer; }
+
+
+.myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.myImg:hover { opacity: 0.7; }
+
+/* THE MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* MODAL CONTENT (IMAGE INSIDE) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+/* MODAL ANIMATION LOADING */
+.modal-content {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from { -webkit-transform:scale(0) } 
+    to { -webkit-transform:scale(1) }
+}
+
+@keyframes zoom {
+    from { transform:scale(0) } 
+    to { transform:scale(1) }
+}
+
+/* 100% IMG WIDTH ON SMALLER SCREENS */
+@media only screen and (max-width: 700px) {
+    .modal-content { width: 100%; }
+}
+
+/* THE CLOSE BUTTON */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myButton {
+	background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* For Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.myButton:hover {
+    background-color: #fff;
+    color: #1d1d1d;
+}
+
+/*
+####################################
+#
+#	7. CONTACT ME SECTION
+#
+####################################
+*/
+
+#contact {
+	background-color: #fff;
+	padding: 80px 0px 80px 0px;
+
+}
+
+.social_link {
+	color: #9E9E9E !Important;
+    text-decoration: none !Important;
+    padding-right: 10px;
+}
+
+/*
+####################################
+#
+#	8. FOOTER SECTION
+#
+####################################
+*/
+
+footer {
+	background-color: #23272A;
+	padding:20px;
+	text-align:center
+}
+
+.up {
+	height: 30px;
+    border: unset;
+    margin-left: 11px;
+	margin-top: -3px;
+    position: absolute;
+	right: 450px;
+	transition: 0.3s;
+}
+
+.up:hover { opacity: 0.7; }
